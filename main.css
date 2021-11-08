@@ -10,8 +10,15 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
+
+body{
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  background: #f7d08c;
+  color: #3a2921;
+}
+
+
 
 .banner{
   width: 100%;
@@ -28,6 +35,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
+  /* --- Barra fija --- */
+  position: fixed;
+  top: 0;
+  right: 7.5%;
+
 }
 
 .logo{
@@ -46,6 +59,7 @@
   text-decoration: none;
   color: var(--negro);
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .navbar ul li::after{
@@ -73,13 +87,15 @@
 }
 
 .content h1{
-  font-size: 70px;
+  font-size: 72px;
+  font-weight: 700;
   margin-top: 80px;
 }
 
 .content p{
   margin: 20px auto;
-  font-weight: 100;
+  font-weight: 300;
+  font-size: 17px;
   line-height: 25px;
 }
 
@@ -115,10 +131,106 @@ button:hover span{
 }
 
 
-body{
-  background: #f7d08c;
-  color: #3a2921
+.apartado1{
+  color: var(--amarillo);
 }
+
+.apartado1 h1{
+  color: var(--negro);
+  font-size: 72px;
+  font-weight: 700;
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+.productos{
+  display: flex;
+  padding: 10px;
+
+  justify-content: center;
+  
+}
+
+.productos c1{
+  background: var(--azul);
+  border-radius: 15px;
+  padding: 10px;
+  margin: 50px;
+  width: 400px;
+  height: 470px;
+
+  font-size: 35px;
+  color: var(--negro);
+  cursor: pointer;
+
+  transition: 0.5s;
+}
+
+.productos c1:hover{
+  width: 700px;
+  padding: 10px;
+  
+}
+
+.productosImg{
+  background: var(#f7d08c);
+  border-radius: 10px;
+  width: 350px;
+  height: 350px;
+  margin-left: 25px;
+  margin-top: 20px;;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.foto_producto{
+  height: 110%;
+}
+
+.productos c1 p{
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  
+  margin-top: 10px; 
+}
+
+
+.apartado2{
+  background: linear-gradient(180deg, var(--amarillo) 0%, var(--rojo) 100%);
+
+  margin-top: 10px;
+}
+
+.apartado2 contenido{
+  font-size: 20px;
+  color: var(--azul);
+
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+
+
+
+
+/* ---------- PRODUCTOS ---------- */
+
+.container{
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+
+}
+
+
+
+
 
 /*
 #f7d08c
